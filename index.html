@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html style="--offset-init:11px; --offset-content:11px; --offset-header:11px;" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PromptEng 2027</title>
+  <!-- css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/ionicons.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body data-spy="scroll" data-target="#site-nav">
+<!--*************  IMPORTED SCRIPTS ************* -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smooth-scroll.min.js"></script>
+<script src="js/main.js"></script>
+
+<!--Navigation Bar Definition-->
+<nav id="site-nav" class="navbar navbar-fixed-top navbar-custom navbar-solid">
+  <div class="container">
+    <div class="navbar-header">
+      <div class="site-branding">
+        <a class="logo" href="#">
+          PromptEng 2027
+        </a>
+      </div>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items"
+              aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-items">
+      <ul class="nav navbar-nav navbar-left">
+        <li class="active"><a data-scroll="" href="#about">About</a></li>
+        <li><a data-scroll="" href="#paper_submissions">Call for papers</a></li>
+        <li><a data-scroll="" href="#important_dates">Important dates</a></li>
+        <li><a data-scroll="" href="#program">Program</a></li>
+        <!--<li><a href="">Proceedings</a></li>-->
+        <li><a data-scroll="" href="#committee">Committee</a></li>
+        <li><a data-scroll="" href="#venue">Location</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="section about" style="padding:0">
+  <div class="container">
+    <!-- *************** Main Entry Stuff ***************-->
+    <div class="row">
+      <div class="col-lg-12 uOffset">
+        <br>
+        <h1 style="padding-top:25px">PromptEng'27 - Workshop on Prompt Engineering for Pre-Trained Language Models</h1>
+        <p>4<sup>th</sup> PromptEng Workshop at the ACM WebConf'27, <b>May 10<sup>th</sup> - 11<sup>th</sup>, 2027</b></p>
+        <div class="row">
+          <div class="col-lg-12"><img class="img-responsive" src="img/visual_banner.png" alt="visual banner" style="width: 100%;"></div>
+        </div>
+      </div>
+      <div class="col-lg-8">
+      	<!-- *************** Proceedings Announcement ***************-->
+      	<!-- <div style="color:black; border: 5px solid #6a00ff; opacity: .8; padding: 10px; margin: 20px;"> -->
+      	<!--   <div> -->
+      	<!--     <h3>Proceedings are available through CEUR-WS<br></h3> -->
+      	<!--   </div> -->
+      	<!--   <div class="bs-component"> -->
+      	<!--     <h4><a href="" target="_blank"></a></h4> -->
+      	<!--   </div> -->
+      	<!-- </div> -->
+
+
+	<!-- *************** About Entry Stuff ***************-->
+        <div class="uHeader page-header">
+          <h2 id="about" class="uContent">About</h2>
+        </div>
+        <div class="bs-component">
+	  <p>
+	    The recent achievements and availability of Large Language
+	    Models has paved the road to a new range of applications
+	    and use-cases. Pre-trained language models are now being
+	    involved at-scale in many fields where they were until now
+	    absent from. More specifically, the progress made by
+	    causal generative models has opened the door to using them
+	    through textual instructions <i>aka.</i> <b>prompts</b>.
+	    Unfortunately, the performances of these prompts are
+	    highly dependent on the exact phrasing used and therefore
+	    practitioners need to adopt fail-retry strategies.
+	  </p>
+	  <blockquote>
+	    <p>
+	      In a nutshell, PromptEng provides the research community
+	      with a forum to discuss, exchange and design advanced
+	      prompting techniques for LLM applications.
+	    </p>
+	  </blockquote>
+	  <p>
+	    This fourth international workshop on prompt engineering
+	    aims at gathering practitioners (both from Academia and
+	    Industry) to exchange good practices, optimizations,
+	    results and novel paradigms about the designing of
+	    efficient prompts to make use of LLMs.
+	  </p>
+        </div>
+
+	
+        <!-- *************** Paper Submission Guidelines Stuff ***************-->
+        <div class="uHeader page-header">
+          <h2 id="paper_submissions" class="uContent">Call for papers</h2>
+        </div>
+        <div class="bs-component">
+	  <p>
+	    Undoubtedly, the recent Large Language Models (LLMs) are
+	    becoming more and more omnipotent in many tasks. Different
+	    sub-fields from the Semantic Web such as Knowledge Graph
+	    construction, knowledge verbalization, Web pages
+	    summarization have considerably benefited from such a
+	    prompting mechanism. The ability to query and interact
+	    with them using prompts is crucial to generate
+	    high-quality output in the desired format. While existing
+	    contributions have been made towards prompt engineering,
+	    several difficulties and challenges remain to gain a
+	    better understanding of how those LLMs respond to
+	    different prompts. Typically, the way instructions are
+	    conveyed in prompts can lead to either distinct or similar
+	    output from the models.
+	  </p>
+	  <p>
+	    Moreover, some instructions are better respected while
+	    others are simply ignored for some tasks. So far,
+	    LLM-practitioners have been mainly working on their own,
+	    developing and testing bespoke techniques to achieve their
+	    goals, re-starting the prompt-design tasks for each new
+	    model they have been using. Such an approach often leads
+	    to tackle problems which have already been explored by
+	    other researchers.
+	  </p>
+	  <p>
+	    This workshop aims to investigate and analyze these
+	    behaviors, through experimental analysis and probing of
+	    LLMs, in order to gain insights into the models'
+	    sensitivity to different prompts. By uncovering
+	    significant findings, the community can greatly benefit in
+	    utilizing LLMs more effectively while also preventing the
+	    generation of harmful content.  Ultimately, this workshop
+	    endeavors to compile and index successful and unavailing
+	    prompts with respect to both tasks and models.
+	  </p>
+	  <hr>
+	  <p>
+	    Topics of interest include, but are not limited to themes
+	    related to the techniques of prompt engineering:
+	  </p>
+	  <ul>
+	    <li>Prompts &amp; Chain-of-Thought Prompts Design</li>
+	    <li>Theoretical and Experimental Analysis of Prompting</li>
+	    <li>Prompts Transferability</li>
+	    <li>Specific prompt techniques for Web crawling</li>
+	    <li>Ontology generation combining LLM and Web data</li>
+	    <li>Semantic and Syntactic comparison of prompt performances</li>
+	    <li>Structured Prediction with Prompts</li>
+	    <li>Prompt Retrieval and Generation</li>
+	    <li>Visualization with Prompt Techniques</li>
+	  </ul>
+	  <hr>
+	  <p>
+	    We envision <b>five</b> types of submissions covering the
+	    entire workshop topics spectrum:
+	  </p>
+	  <ol>
+	    <li><u>Research Papers</u> (max 10 pages), presenting
+	    novel scientific research addressing topics of the
+	    workshop.</li>
+	    <li><u>Position &amp; Demo papers</u> (max 5 pages),
+	    encouraging papers describing significant work in
+	    progress, late breaking results or ideas of the domain, as
+	    well as functional systems relevant to the community.</li>
+	    <li><u>Industry &amp; Use Case Presentations</u> (max 5
+	    pages), in which industry experts can present and discuss
+	    practical solutions, use case prototypes, best practices,
+	    etc. at any stage of implementation.</li>
+	    <li><u>Expression of Interest</u> (max 2 pages),
+	    presenting a research topic, a work in progress, practical
+	    applications or needs, etc.</li>
+	    <li><u>Technical prompting technique</u> (max 2 pages),
+	    describing practically a prompt together with a minimal
+	    working example and an associated use-case motivating
+	    it.</li>
+	  </ol>
+	  <p>
+	    In order to ease the reviewing process, authors may add
+	    the track they are submitting to directly in their titles,
+	    for instance: "<code>Article Title [Industry]</code>".
+	  </p>
+	  <hr>
+	  <p>
+	    Submissions must be in double-column format, and must adhere
+	    to the <a href="https://www.acm.org/publications/proceedings-template">ACM
+	    template and format</a> (also <a href="https://www.overleaf.com/latex/templates/association-for-computing-machinery-acm-sig-proceedings-template/bmvfhcdnxfty">available</a>
+	    in Overleaf). The recommended setting for LaTeX
+	    is: <code>\documentclass[sigconf, anonymous, review]{acmart}</code>.
+	    The PDF files must have all non-standard fonts
+	    embedded. Workshop submissions must be
+	    <b>self-contained</b> and in <b>English</b>. Note: The
+	    review process is <b>single-blind</b>, no need for authors
+	    to submit anonymous articles.
+	  </p>
+	  <p>
+	    If possible, we envision to have formal proceedings through <a href="https://ceur-ws.org/">CEUR-WS</a>. (More about this time later.)
+	  </p>
+	  <p>
+	    All papers should be submitted to <a href="">TO-BE-COMMUNICATED</a>.
+	  </p>
+        </div>
+
+        <!-- *************** Important Dates Stuff ***************-->
+        <div class="uHeader page-header">
+          <h2 id="important_dates" class="uContent">Important Dates</h2>
+        </div>
+	<div class="bs-component">
+          <ul>
+	    <li>Submission: January 4<sup>th</sup>, 2027
+            <li>Notification: February 1<sup>st</sup>, 2027
+            <li>Camera-ready: February 16<sup>th</sup>, 2027
+            <li>Presentation: May 10<sup>th</sup>-11<sup>th</sup>, 2027</b></li>
+          </ul>
+	  Note: All deadlines are 23:59 AOE.
+        </div>
+	
+	<!-- *************** Workshop Program ***************-->
+        <div class="uHeader page-header">
+          <h2 id="program" class="uContent">Program</h2>
+        </div>
+	<div class="bs-component">
+	  TBA
+	</div>
+
+
+	
+        <!-- *************** Committee & Organisation Stuff ***************-->
+        <div class="uHeader page-header">
+          <h2 id="committee" class="uContent">Committee</h2>
+        </div>
+        <div class="bs-component">
+          <h3>Organisers</h3>
+	  <ul>
+	    <li><a href="https://dgraux.github.io/">Damien Graux</a>
+	    (EcoVadis, UK) leads a team of research scientists at
+	    EvoVadis that is specialised in AI/ML. He has been
+	    contributing to research efforts in Knowledge Computing
+	    technologies: focusing <i>inter alia</i> on Semantic Web,
+	    designing complex pipelines for heterogeneous Big Data and
+	    LLM-based knowledge management. Prior to this, he had
+	    research positions at Huawei R&amp;D (UK), at Inria
+	    (France), Trinity College Dublin (Ireland) and Fraunhofer
+	    IAIS (Germany). He has been involved in the organisations
+	    of many international workshops at major conferences such
+	    as the LASCAR (co-located with ESWC) or the MEPDaW
+	    (co-located with ISWC) series, or recently NORA at
+	    NeurIPS.</li>
+	    <li><a href="https://montellasebastien.github.io/">Sebastien
+	    Montella</a> (Huawei Ltd., UK) is a research scientist at
+	    the Huawei Edinburgh Research Center. During his Ph.D., he
+	    specialized in Natural Language Generation and Knowledge
+	    Graph Embeddings research areas. Additionally, he has a
+	    keen interest in statistical learning, geometric deep
+	    learning, natural language processing, and computer
+	    vision. In the past, Sebastien as co-organized the 18th
+	    Workshop on Spoken Dialogue Systems for PhDs, PostDocs
+	    &amp; New Researchers (YRRSDS) in Edinburgh, Scotland
+	    (2022).</li>
+	    <li><a href="https://hajirajabeen.github.io/">Hajira
+	    Jabeen</a> (UniKlinik Cologne, Germany) leads the 'AI in
+	    Research Data Management' team at the Institute for
+	    Biomedical Informatics. Her team leverages artificial
+	    intelligence and large language models (LLMs) to enhance
+	    research data management practices, particularly in the
+	    biomedical field. They focus on developing scalable,
+	    AI-driven tools and workflows that improve data
+	    organization, integration, and analysis, driving
+	    innovative, data-centric solutions. Hajira has a diverse
+	    background in research and teaching, with prior
+	    affiliations at the University of Bonn, the University of
+	    Cologne, and ITU Copenhagen. She has also organized
+	    numerous workshops and conferences in data science and
+	    informatics.</li>
+	    <li><a href="https://fabriziorlandi.net/">Fabrizio
+	    Orlandi</a> (Semantic Partners, Ireland) is a Principal
+	    Knowledge Engineer at Semantic Partners, where he leads
+	    the implementation of knowledge-graph solutions for major
+	    clients such as LEGO, directing end-to-end architecture,
+	    data modeling, and AI initiatives. He brings extensive
+	    expertise in knowledge management, linked data, big-data
+	    technologies, and data governance, developed through
+	    senior research roles at Trinity College Dublin's ADAPT
+	    Centre, a tenure as Senior Knowledge Engineer at IKEA
+	    where he designed large-scale knowledge-graph and
+	    data-integration solutions, and postdoctoral research at
+	    Fraunhofer IAIS on EU-funded and industry-partnered
+	    projects.</li>
+	  </ul>
+        </div>
+	
+        <div class="bs-component">
+          <h3>Program Committee</h3>
+	  TBA
+        </div>
+	
+      </div>
+      <div class="col-lg-4" style="padding-top:20px">
+        <div class="bs-component">
+          <h3>Important Dates</h3>
+	  All deadlines are 23:59 AOE.
+          <ul>
+	    <li><u>Submission</u> (<a href="">OpenReview</a>): January 4<sup>th</sup>, 2027</li>
+            <li><u>Notification</u>: February 1<sup>st</sup>, 2027</li>
+            <li><u>Camera-ready</u>: February 16<sup>th</sup>, 2027</li>
+            <li><u>Presentation</u>: May 10<sup>th</sup>-11<sup>th</sup>, 2027</li>
+          </ul>
+        </div>
+        <!-- Add Twitter -->
+        <div class="bs-component" style="padding-top:20px">
+	  <a class="twitter-timeline" href="https://twitter.com/PromptEng1" data-widget-id="568782153191006208">@PromptEng1</a>
+	  <script>
+	    ! function(d, s, id) {
+	     var js, fjs = d.getElementsByTagName(s)[0],
+	     p = /^http:/.test(d.location) ? 'http' : 'https';
+	     if (!d.getElementById(id)) {
+	      js = d.createElement(s);
+	      js.id = id;
+	      js.src = p + "://platform.twitter.com/widgets.js";
+	      fjs.parentNode.insertBefore(js, fjs);
+	     }
+	    }(document, "script", "twitter-wjs");
+	  </script>
+	</div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+<section id="venue" class="section location">
+  <div class="container">
+    <div class="col-sm-6 uHeader">
+      <h2 class="section-title uContent">Event Location</h2>
+      <p>
+	PromptEng 2027 is co-located with the
+	ACM <a href="https://www2027.thewebconf.org/">WebConf
+	2027</a>.
+      </p>
+      <blockquote>
+	<p>
+	  Dublin, Ireland
+	</p>
+      </blockquote>
+      <p>
+	<a href="https://www2027.thewebconf.org/attending/396-2/">More
+	  info.</a> about the venue.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!--The Magic Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p class="site-info">
+	  Designed and <br> Developed by <a data-scroll=""
+					    href="#">PromptEng 2027</a>
+	</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>window.onload = window.onresize;</script>
+
+</body>
+</html>
